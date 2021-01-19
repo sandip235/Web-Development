@@ -28,7 +28,7 @@
             border: 2px solid rgb(15, 235, 172);
             display: block;
             margin: 20px auto;
-            width: 33%;
+            width: 40%;
             top:5px;
         }
         .right{
@@ -49,6 +49,21 @@
             display: inline-block;
         }
 
+        .navbar li a
+        {
+            text-decoration: none;
+            padding: 13px 13px;
+            font-size: 20px;
+            color: rgb(76, 13, 194);
+        }
+
+        .navbar li a:hover, .navbar li a:active
+        {
+            text-decoration: underline;
+            color: rgb(235, 79, 157);
+            background-color: slategray;
+        }
+
         
     </style>
 </head>
@@ -62,7 +77,7 @@
         <!-- Mid box for Naviation -->
         <div class="mid"> 
             <ul class="navbar">
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Fitness Calculator</a></li>
                 <li><a href="#">Contact Us</a></li>
