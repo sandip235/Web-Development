@@ -1,0 +1,4 @@
+Ctrl + /  :::: to give comment
+
+element.id name
+element.class name

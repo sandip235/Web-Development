@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 60%;
+            /* margin: auto;     used to center the element */
+            margin:100px auto;
+            border:3px solid brown;
+            height: 1000px;
+        }
+
+        body
+        {
+            font-family: 'Ubuntu', sans-serif;  
+        }
+        .item{
+            border: 3px solid green;
+            margin: 12px 10px;
+            padding:12px 20px;
+            background-color: rgb(238, 175, 175);
+        }
+
+        #fruits{
+            float: left;
+            width: 90%;
+        }
+
+        #computer{
+            float: left;
+            width: 30%;
+        }
+        
+        #stationary{
+            float: left;
+            width: 30%;
+        
+        }
+
+        .btn
+        {
+            background-color: rgb(196, 152, 95);
+            padding: 6px;
+            border: none;
+            font-size: 13px;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+
+        button:hover
+        {
+            background-color: rgb(97, 230, 230);
+            font-size: 15px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover
+        {
+            background-color: rgb(97, 230, 230);
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit eaque architecto laudantium exercitationem illo, quod neque pariatur explicabo minima quae doloribus officiis repellendus culpa quasi consectetur perspiciatis nemo quo ratione? Fugiat, perferendis eligendi.</p>
+
+            <a href="#" class="btn">Read More</a>
+            <button class="btn">Contact Us</button>
+            
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit eaque architecto laudantium exercitationem illo, quod neque pariatur explicabo minima quae doloribus officiis repellendus culpa quasi consectetur perspiciatis nemo quo ratione? Fugiat, perferendis eligendi.</p>
+            
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit eaque architecto laudantium exercitationem illo, quod neque pariatur explicabo minima quae doloribus officiis repellendus culpa quasi consectetur perspiciatis nemo quo ratione? Fugiat, perferendis eligendi.</p>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
