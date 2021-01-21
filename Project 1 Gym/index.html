@@ -25,7 +25,7 @@
         }
 
         .left{
-            border: 2px solid red;
+            /* border: 2px solid red; */
             display: inline-block;
             position: absolute;
             top: 00px;
@@ -42,10 +42,13 @@
         .left div
         {
             text-align: center;
+            font-family: 'Baloo Chettan 2', cursive;
+            font-weight: bold;
         }
 
         .mid{
-            border: 2px solid rgb(15, 235, 172);
+            border: 2px solid rgb(23, 119, 4);
+            border-radius: 10px;
             display: block;
             margin: 20px auto;
             width: 40%;
@@ -54,11 +57,11 @@
             color: whitesmoke;
         }
         .right{
-            border: 2px solid rgb(116, 14, 233);
+            /* border: 2px solid rgb(116, 14, 233); */
             position: absolute;
             display: inline-block;
             right: 50px;
-            top: 20px;
+            top: 50px;
         }
 
         .navbar
@@ -98,11 +101,13 @@
             padding: 6px 9px;
             border-radius: 10px;
             cursor: pointer;
+            
         }
 
         .btn:hover
         {
             background-color: rgb(243, 187, 187);
+            
         }
 
         .container
@@ -114,11 +119,29 @@
             width: 35%;
         }
 
-        .form-group
+        .form-group input
         {
             display: block;
-            width: 40%;
-            margin: auto;
+            width: 200px;
+            margin: 10px auto;
+           
+            font-size: 15px;
+            border-radius: 08px;
+            font-family: 'Baloo Chettan 2', cursive;
+        }
+
+        .container h1
+        {
+            text-align: center;
+        }
+
+        .container button
+        {
+            display: block;
+            width: 200px;
+            margin: 5px auto;
+            border-radius: 10px;
+            font-family: 'Baloo Chettan 2', cursive;
         }
 
         
@@ -160,18 +183,25 @@
             </div>
 
             <div class="form-group">
-                <input type="text" name="txtName" id="txtname" placeholder="Enter your Name">
+                <input type="text" name="txtMobile" id="txtname" placeholder="Enter your Mobile Number">
             </div>
 
             <div class="form-group">
-                <input type="text" name="txtName" id="txtname" placeholder="Enter your Name">
+                <input type="text" name="txtAddress" id="txtname" placeholder="Enter your Address">
             </div>
 
             <div class="form-group">
-                <input type="text" name="txtName" id="txtname" placeholder="Enter your Name">
+                <input type="text" name="txtEmail" id="txtname" placeholder="Enter your Email">
             </div>
 
+            <div class="form-group">
+                <input type="text" name="txtLocality" id="txtname" placeholder="Enter your Locality">
+            </div>
+
+            <div class="form-group">
             <button class="btn">Submit</button>
+            </div>
+            
         </form>
     </div>
 </body>
