@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z Index</title>
+    <style>
+        .box
+        {
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            margin: 4px 5px;
+        }
+
+        #box1
+        {
+            background: red;
+            
+            
+        }
+
+        #box2
+        {
+            background: blue;
+            /* display: none;    Object will not visible with its occupied */
+            visibility: hidden;    /* Object will hidden but it will occupy its space  */    
+            top:30px;
+        }
+
+        #box3
+        {
+            background: yellow;
+        }
+
+        #box4
+        {
+            background: tomato;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">
+        
+    </div>
+    <div class="box" id="box2">
+        
+    </div>
+    <div class="box" id="box3">
+        
+    </div>
+    <div class="box" id="box4">
+        
+    </div>
+
+    
+</body>
+</html>
