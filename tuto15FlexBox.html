@@ -10,7 +10,22 @@
             height: 500px;
             width: 100%;
             border: 2px solid black;
+            /* Initialize the flex: By default flex direction raw */
             display: flex;
+
+            /* flex direction : raw and column , default raw */
+            flex-direction: column;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            flex-flow:row wrap;
+
+            /* justify-content: center;    Horizontal justify
+            justify-content: space-around;
+            justify-content: space-between; */
+ 
+
+            /* vertically align items */
+            align-items: center;
         }
 
         .item
@@ -19,6 +34,16 @@
             border: 2px solid rgb(243, 128, 61);
             margin: 10px;
             padding: 20px;
+            height: 100px;
+            width: 100px;
+        }
+
+        #item-1
+        {
+            /* flex-grow: 220; */
+            flex-basis: 200px;
+            /* flex basis set width/height based on flex order row or column  */
+
         }
     </style>
 </head>
