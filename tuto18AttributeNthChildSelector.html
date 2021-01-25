@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and Nth Child Selectors</title>
+    <style>
+        input
+        {
+            display: block;
+        }
+
+        .container
+        {
+            display: block;
+            width: 300px;
+            margin: auto;
+        }
+        input[type='text']
+        {
+            padding:25px;
+        }
+        a[target='_blank']
+        {
+          font-size: 50px;  
+        }
+
+        a[target='_self']
+        {
+          font-size: 50px;  
+          color: yellow;
+        }
+
+        /* It will apply the css for 2nd child in li */
+        li:nth-child(2)
+        {
+            color: blue;
+            background-color: red;
+        }
+
+        
+        /* It will apply the css for 4th child in li */
+        li:nth-child(4)
+        {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form-control">
+            <a href="#" target="_blank">Test Selection</a>
+            <a href="#" target="_self">Go to facebook</a>
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+
+        <ul>
+            <li class="item" id="item-1">item 1</li>
+            <li class="item" id="item-2">item 2</li>
+            <li class="item" id="item-3">item 3</li>
+            <li class="item" id="item-4">item 4</li>
+        </ul>
+    </div>
+</body>
+</html>

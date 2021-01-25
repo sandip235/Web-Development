@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors in CSS</title>
+</head>
+<style>
+    h1{
+        background-color: lightblue;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    div p{
+        background-color: yellow;
+        color: black;
+    }
+
+    div ul li
+    {
+        background-color: chartreuse;
+    }
+
+    /* css will apply to those p which is after div tag */
+    div >p
+    {
+        color:crimson;
+        background-color: darksalmon;
+    }
+
+    /* css will apply p tag before the div in siblings */
+    div +p
+    {
+        color: white;
+        background-color: black;
+    }
+</style>
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <p>this is paragraph</p>
+            <ul>
+                <li>this is ul li paragraph</li>
+            </ul>
+        </div>
+        <p>this is outer paragraph</p>
+    </div>
+    <p>this is outer most paragraph</p>
+</body>
+</html>
