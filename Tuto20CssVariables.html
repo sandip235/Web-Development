@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable and Custome Properties</title>
+    <style>
+        /* It defines root variables */
+        :root
+        {
+            --primary-width:255px;
+        }
+
+        .container
+        {
+            display: flex;
+            background-color: greenyellow;
+        }
+
+        .box
+        {
+            /* It defines local variables by using -- symbol */
+            --back-color:red;
+            background-color:var(--back-color);
+            padding: 10px 10px;
+            width: var(--primary-width);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box" id="box3">box 3</div>
+    </div>
+</body>
+</html>

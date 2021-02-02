@@ -6,18 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before and After Pseudo Selector</title>
     <style>
+
+        body
+        {
+            background-color: cornsilk;
+            margin: 0px;
+            padding: 0px;
+            background: url('https://source.unsplash.com/random')no-repeat center center/cover;
+        }
+
+        header::before
+        {
+            background:url('https://source.unsplash.com/collection/190727/1600x900');
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .navigation
+        {
+            font-size: 23px;
+            display: flex;
+        }
+
+        .navigation li
+        {
+            list-style: none;
+            padding: 23px;
+        }
+
         section {
             display: flex;
             flex-direction: column;
-            width: 600px;
+            border: 2px solid lightcoral;
+            align-items: center;
+            justify-content: center;
+            height: 170px;
+            margin: 23px 200px;
         }
+
+        section::before
+        {
+            content: "hello world";
+        }
+
+        section::after
+        {
+            content: "After Section: hello world";
+        }
+
     </style>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <ul>
+            <ul class="navigation">
                 <li class="item">Home</li>
                 <li class="item">About Us</li>
                 <li class="item">Contact Us</li>
@@ -25,13 +68,14 @@
             </ul>
         </nav>
 
-        <section>
-            <h3>Welcome to Coding World</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, beatae. Impedit qui ullam, aspernatur eos
-                nihil placeat quas porro est quibusdam, odit doloribus omnis adipisci. Mollitia ab inventore architecto
-                suscipit quas cum magni laudantium.</p>
-        </section>
     </header>
+    <section>
+        <h3>Welcome to Coding World</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, beatae. Impedit qui ullam, aspernatur eos
+            nihil placeat quas porro est quibusdam, odit doloribus omnis adipisci. Mollitia ab inventore architecto
+            suscipit quas cum magni laudantium.</p>
+    </section>
+    <hr>
 </body>
 
 </html>

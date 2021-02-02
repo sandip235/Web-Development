@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuto 20 Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        .card {
+            border: 1px solid red;
+            margin: 10px 20px;
+            background-color: tan;
+        }
+
+        .container h1
+        {
+            text-shadow: 2px 2px greenyellow;
+        }
+
+        #card1 {
+            box-shadow: inset 10px 10px blue;
+            /* x offset  y offset which color */
+            /* box-shadow: inset 10px 10px blue; will perform inside shadow*/
+
+        }
+
+        #card2 {
+            box-shadow: -10px -10px blue;
+            /* if you will put minus sign thn it will do upper side color */
+        }
+
+        #card3 {
+            box-shadow: 10px 10px 25px blue;
+            /* third para indicate how much want to bluer */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>Card 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eligendi dolorum porro, delectus et,
+                corrupti sequi facilis consectetur sint officia dicta maxime modi?</p>
+        </div>
+
+        <div class="card" id="card2">
+            <h1>Card 2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eligendi dolorum porro, delectus et,
+                corrupti sequi facilis consectetur sint officia dicta maxime modi?</p>
+        </div>
+
+        <div class="card" id="card3">
+            <h1>Card 3</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eligendi dolorum porro, delectus et,
+                corrupti sequi facilis consectetur sint officia dicta maxime modi?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
