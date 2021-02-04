@@ -7,3 +7,130 @@
 :root
 {
     --navbar-height: 59px;
+}
+
+body
+{
+    background-color: rgb(245, 235, 235);
+}
+
+
+/* Navigation Bar */
+#navbar
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* position: absolute; */
+}
+
+#navbar::before
+{
+    content: "";
+    background-color: rgb(14, 13, 13);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4    ;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo
+{
+    margin: 0px 0px;
+}
+
+#logo img
+{
+    height: 100px;
+    margin:5px 10px;
+
+
+}
+
+/* Navigation Bar: List Style */
+#navbar ul
+{
+    display: flex;
+}
+
+#navbar ul li
+{
+    list-style: none;
+    font-size: 01rem;   
+}
+
+#navbar ul li a
+{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#navbar ul li a:hover
+{
+    color:black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+/* Home section */
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before
+{
+    content: "";
+    background: url('../img/bg1.jpg') no-repeat center center/cover ;
+    /* background:url('../bg1.jpg')no-repeat center center/cover; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8    ;
+}
+
+#home h1
+{
+    color: rgb(18, 15, 231);
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+#home p
+{
+    color: rgb(6, 31, 3);
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+/* Utility Classes */
+.h-primary
+{
+    font-size: 3.8rem;
+    padding: 10px;
+}
+
+.btn
+{
+    padding: 6px 20px;
+    border: 2px solid rgb(248, 188, 178);
+    background-color: brown;
+    border-radius: 8px;
+    color: white;
+    margin: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
