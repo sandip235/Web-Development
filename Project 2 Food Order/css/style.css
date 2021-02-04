@@ -1,0 +1,9 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+}
+
+/* CSS Variables */
+:root
+{
+    --navbar-height: 59px;

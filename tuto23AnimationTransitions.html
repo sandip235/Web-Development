@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation CSS Transitions</title>
+    <style>
+        .container
+        {
+            width: 100%;
+        }
+
+        #box
+        {
+            display: flex;
+            width: 250px;
+            height: 250px;
+            background-color: darksalmon;
+            justify-content: center;
+            align-items: center;
+
+            transition-property: background-color;
+            transition-duration: 4s;
+            transition-timing-function: cubic;
+
+            transition-property: width;
+            transition-duration: 4s;
+        }
+
+        /* When we use transition property then we have to compulsary use hover property */
+        #box:hover
+        {
+            background-color: darkseagreen;
+            width: 500px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h3>This is CSS Transitions Making</h3>
+    <div class="container">
+        <div id="box">
+            this is Box
+        </div>
+    </div>
+    
+</body>
+</html>
