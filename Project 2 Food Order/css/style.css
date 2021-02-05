@@ -20,8 +20,10 @@ body
 {
     display: flex;
     align-items: center;
-    position: relative;
-    /* position: absolute; */
+    /* position: relative; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 #navbar::before
@@ -29,10 +31,12 @@ body
     content: "";
     background-color: rgb(14, 13, 13);
     position: absolute;
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.4    ;
+    opacity: 0.9    ;
 }
 
 /* Navigation Bar: Logo and Image */
@@ -45,7 +49,7 @@ body
 {
     height: 100px;
     margin:5px 10px;
-
+    opacity: 1;
 
 }
 
@@ -53,6 +57,7 @@ body
 #navbar ul
 {
     display: flex;
+    margin: 05px 20px;
 }
 
 #navbar ul li
@@ -85,7 +90,7 @@ body
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 300px;
+    height: 623px;
     justify-content: center;
     align-items: center;
 }
@@ -96,7 +101,9 @@ body
     background: url('../img/bg1.jpg') no-repeat center center/cover ;
     /* background:url('../bg1.jpg')no-repeat center center/cover; */
     position: absolute;
-    height: 100%;
+    top: 0px;
+    left: 0px;
+    height: 623px;
     width: 100%;
     z-index: -1;
     opacity: 0.8    ;
@@ -116,11 +123,153 @@ body
     font-family: 'Baloo Da 2', cursive;
 }
 
+/* Services Section */
+#services
+{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box
+{
+    border: 2px solid red;
+    background-color: rgb(231, 243, 237);
+    padding: 34px;
+    margin: 3px 8px;
+    border-radius: 24px;
+
+}
+
+#services .box img
+{
+    height: 140px;
+    width: 220px;
+    margin: auto;
+    display: block;
+    
+}
+
+#services .box p
+{
+    font-family: 'Baloo Da 2', cursive;
+}
+
+
+/* client section */
+#client-section
+{
+    height: 300px;
+}
+
+#client-section::before
+{
+    content: " ";
+    position: absolute;
+    background: url('../img/bg2.jpg');
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#clients
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item
+{
+    margin: 5px 34px;
+}
+
+.client-item img
+{
+    height: 120px;
+    width: 120px;
+}
+
+/* Contact section */
+#contacts
+{
+    position: relative;
+}
+
+#contacts::before
+{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../img/contact_bg1.jpg')no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact-box
+{
+
+}
+
+#contact-box input
+{
+
+}
+
+
+#contact-box textarea
+{
+
+}
+
+#contact-box form
+{
+    width: 40%;
+}
+
+#contact-box label
+{
+
+}
+
+.form-group
+{
+
+}
+
+/* Footer section */
+footer
+{
+    background-color: black;
+    color: white;
+    padding: 9px 15px;
+}
+
+
+
+
+
+
 /* Utility Classes */
 .h-primary
 {
+    font-family: 'Baloo Da 2', cursive;
     font-size: 3.8rem;
     padding: 10px;
+}
+
+.h-secondary
+{
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 2.2rem;
+    padding: 10px;
+}
+
+.center
+{
+    text-align: center;
 }
 
 .btn
