@@ -69,7 +69,7 @@ body
 #navbar ul li a
 {
     display: block;
-    padding: 3px 22px;
+    padding: 3px 25px;
     border-radius: 20px;
     text-decoration: none;
     color: white;
@@ -81,6 +81,7 @@ body
     color:black;
     background-color: white;
     border-radius: 20px;
+    padding: 10px 25px;
 }
 
 
@@ -239,10 +240,23 @@ body
 #contact-box button
 {
     padding: 6px 20px;
-    border: 2px solid rgb(248, 188, 178);
-    background-color: rgb(74, 145, 238);
+    border: 2px solid rgb(228, 214, 212);
+    background-color: rgb(97, 87, 92);
     border-radius: 8px;
-    color: rgb(40, 16, 252);
+    color: rgb(10, 1, 1);
+    margin: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    float: right;
+}
+
+#contact-box button:hover
+{
+    padding: 6px 20px;
+    border: 2px solid rgb(228, 214, 212);
+    background-color: rgb(97, 87, 92);
+    border-radius: 8px;
+    color: rgb(247, 7, 7);
     margin: 10px;
     font-size: 1.5rem;
     cursor: pointer;
