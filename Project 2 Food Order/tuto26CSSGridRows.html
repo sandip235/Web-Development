@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Items</title>
+    <style>
+        .container
+        {
+            display: grid;
+            /* grid-template-rows: 200px 250px 100px; */
+            grid-template-rows: 25% 50% 25%;
+            grid-auto-rows: 10%;   
+            /* grid-template-columns: 50% 50%; */
+            grid-template-columns: 2fr 3fr;
+            grid-template-columns: repeat(4, 2fr);
+            /* auto rows automatically set the 10% for rest of rows */
+            /* grid-template-rows: 1fr 4fr 2fr;   divide according to this value from  */
+            grid-gap: 2px;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            /* minmax used for auto set the box as per the screen size */
+        }
+
+        .item
+        {
+            /* height: 100px;
+            width: 100px; */
+            margin: 3px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item -1</div>
+        <div class="item">This is item -2</div>
+        <div class="item">This is item -3</div>
+        <div class="item">This is item -4</div>
+        <div class="item">This is item -5</div>
+        <div class="item">This is item -6</div>
+        <div class="item">This is item -7</div>
+        <div class="item">This is item -8</div>
+        <div class="item">This is item -9</div>
+        <div class="item">This is item -10</div>
+        <div class="item">This is item -11</div>
+    </div>
+</body>
+</html>
