@@ -9,14 +9,11 @@
         .container
         {
             display: grid;
-            grid-template-columns: repeat(2,4
-            
-            
-            
-            fr);
+            /* grid-template-columns: repeat(5,4fr); */
             /* repeat column function will divide in one full width into 5 equal parts of 2fr size */
-            grid-template-rows: repeat(2,1fr);
-            
+            /* grid-template-rows: repeat(3,1fr);              */
+
+            grid-template-columns: repeat (auto-fit,minmax(100px,1fr) );
         }
 
         .item
@@ -24,6 +21,14 @@
             border: 2px solid red;
             padding:2px;
             margin: 3px;
+        }
+
+        .item:first-child
+        {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
         }
     </style>
 </head>
@@ -38,6 +43,10 @@
         <div class="item">item-7</div>
         <div class="item">item-8</div>
         <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
     </div>
 </body>
 </html>
