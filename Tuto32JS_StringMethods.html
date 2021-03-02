@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script | String and It's Method</title>
+    <script>
+        var name="sandip";
+        var msg="good person";
+        console.log(name);
+
+        var temp=`${name} He is ${msg}`;
+        console.log(temp);
+
+        var len=name.length;
+        console.log(`lenght of name is ${len}`);
+
+        console.log('Hello \n new line');
+
+        var str=new String('new way to create');
+        console.log(str);
+
+        var st="Welcome to the world";
+        console.log(st);
+
+        var position=st.indexOf('to');
+        console.log(position);
+
+        var lastpos=st.lastIndexOf('to');
+        console.log(lastpos);
+
+        var subStr=st.slice(1,10)
+        console.log(subStr);
+
+        var replaced = st.replace('Welcome','padharo');  // take care of capital later
+        console.log(st);
+        console.log(replaced);
+
+        console.log(st.toUpperCase());
+        console.log(st.toLowerCase());
+
+        var strWithWhitespaces = "   this contains            whitespaces        ";
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim());
+
+        var char2 = st.charAt(2);
+        console.log(char2)
+
+        
+
+        // document.getElementById('content').innerHTML= `<h3>this is h3 heading</h3>`
+        // document.getElementById("content").innerHTML= "<h3> this is heading</h3>";
+        
+</script>
+</head>
+<body>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci totam quisquam consectetur aut incidunt, voluptates officia molestiae inventore dolore autem officiis tempore ipsam hic ipsa ullam reprehenderit rerum facilis, facere voluptatem fugiat eos! Exercitationem, officiis?
+
+        <div id="hel">
+            Hello
+        </div>
+        
+    </div>
+    
+</body>
+<script>
+    document.getElementById("hel").innerHTML="get Element by ID";
+
+    let a=10;  // scope end with block end
+    {
+        let a=3;
+        console.log(3);
+        //above sentence will print value 3
+    }
+    console.log(a);
+    //above sentence will print value 10 it will refer first a bcoz second a scope end
+
+    const txt="hello";
+    //using const value will not changed throghout the program
+    console.log(txt);
+
+    let age = 5;
+     if(age>18){
+         console.log("You can drink water");
+     }
+     else if(age==2){
+         console.log("Age is 2")
+     }
+     else if(age==5){
+         console.log("Age is 5")
+     }
+     else{
+         console.log("You can drink Cold Drink");
+     }
+
+     const cups = 41; 
+    switch (cups) {
+        case 4:
+            console.log("The value of cups is 4")
+            break;
+
+        case 41:
+            console.log("The value of cups is 41")
+            break;
+
+        case 42:
+            console.log("The value of cups is 42")
+            break;
+
+        case 43:
+            console.log("The value of cups is 43")
+            break;
+    
+        default:
+            console.log("The value of cups is none of 4, 41, 42, 43")
+            break;
+    }
+
+</script>
+</html>
