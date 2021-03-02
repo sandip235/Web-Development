@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Query</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+
+            grid-template-areas: 'nav nav nav nav'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer ';
+            }
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+                border: 2px solid rgb(96, 10, 235);
+            }
+
+            .container {
+                grid-template-areas: 'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+        }
+
+        @media only screen and (min-width:300px) and (max-width: 500px) {
+            body {
+                background-color: purple;
+            }
+        }
+
+
+        @media only screen and (min-width:500px) and (max-width: 800px) {
+            body {
+                background-color: rgb(48, 15, 233);
+            }
+
+            .container {
+                grid-template-areas: 'nav nav nav nav'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: rgb(27, 216, 83);
+            }
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 25px;
+            background-color: white;
+            margin: 5px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Contact Us</span>
+        </nav>
+        <section class="bdr">
+            Learn CSS in Hindi
+        </section>
+        <aside class="bdr">
+            More About Us
+        </aside>
+    </div>
+
+    <footer class="bdr">
+        @copyright 2021
+    </footer>
+</body>
+
+</html>

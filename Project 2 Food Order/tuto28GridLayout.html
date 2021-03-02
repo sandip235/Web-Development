@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+
+        .item
+        {
+            background-color: lightyellow;
+            border: 2px solid green;
+        }
+
+        #navbar
+        {
+            grid-area: navbar;
+          
+        }
+
+        #section
+        {
+            grid-area: section;
+        }
+
+        #aside{
+            grid-area: aside;
+        }
+
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home aboutud contact us
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit, quo dolores deserunt nobis debitis minima numquam culpa! Pariatur modi alias exercitationem aperiam. lorem100 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus aperiam in cumque libero, ad delectus nulla at, quo vero iure praesentium, expedita quisquam possimus? Accusamus illo cumque ad, quae iste at, magnam eveniet nostrum cupiditate minima ut tempore sint! Unde itaque necessitatibus quas debitis? Maxime facilis quibusdam atque ipsam amet!</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus tenetur officiis neque, necessitatibus asperiores similique quidem nesciunt odit doloremque labore quasi perspiciatis exercitationem?</div>
+
+        <div id="footer" class="item">
+            @copyright 2021
+        </div>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div> -->
+    </div>
+    
+</body>
+</html>
