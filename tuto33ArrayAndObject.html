@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: Array and Object</title>
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+        let a=23;
+        let b="hello";
+        // let c=NULL;
+        let d=undefined;
+        console.log(b);
+
+        // created object
+        let employee={
+            name:"abc",
+            salary:50000
+        }
+        console.log(employee);
+
+        // created array
+        let emp = [1,2,3,"helloArray",undefined];
+        console.log(emp[3]);
+
+        //created object with new keyword 
+        // bracket is different
+        let emp1 = new Array(1,2,3,"helloArray",undefined);
+        console.log(emp1);
+        console.log(emp1.length);
+
+        emp1=emp1.sort();
+        emp1.push("This is added in last");
+    </script>
+    
+</body>
+</html>
