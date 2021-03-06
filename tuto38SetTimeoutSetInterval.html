@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS: Set time interval and Set Time out</title>
 </head>
+
 <body>
-    
+
+    <div class="container">
+        my time is <span id="time"></span>
+    </div>
 
     <script>
         //settimeout : runs once in after the interval of time
         //clearTimeout : runce repeately in after ther interval of time
 
-        function greet()
-        {
-            console.log("Hello.. Good Morning");
+        function greet(name) {
+            console.log("Hello.. Good Morning", name);
         }
 
-        greet();
+        //greet();
+
+        setTimeout(greet, 5000, "Sandip");    // to set the time, after seted time msg will run
+        timeout = setTimeout(greet, 5000, "Sandip");    // give set time out id
+        console.log(timeout);
+        console.log(clearTimeout);    // to cancel the SetTimeout Function
+        
+
+        setInterval(greet, 1000,"sandip");
+        
+        intervalid=setInterval(greet, 1000,"sandip");
+        clearInterval(intervalid);
+        
+        function displaytime()
+        {
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+
+        setInterval(displaytime, 1000);
     </script>
 </body>
+
 </html>
