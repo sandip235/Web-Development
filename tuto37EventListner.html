@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Event Listener</title>
+</head>
+<body>
+    <div id="para" class="container" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor nemo recusandae ab ad eveniet, sed, fugiat labore harum quasi odit officiis esse doloremque in laboriosam molestiae at ipsam delectus saepe, explicabo consectetur voluptatibus accusamus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat ab possimus beatae, est rem similique itaque suscipit temporibus deserunt dolores. Laborum minus perspiciatis voluptatum distinctio soluta sint ratione cupiditate aspernatur!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et cum doloremque facere deleniti mollitia. Rem commodi architecto obcaecati quasi corporis, praesentium nemo ipsam.
+        
+    </div>
+    <button id="btn" onclick="toggleHide()">Click/Hide</button>
+    <script>
+       
+       // Another way to create event listener
+        let para=document.getElementById("para");
+        para.addEventListener('mouseover',function run(){
+            // alert("You are on inside");
+            console.log("You are inside");
+        });
+
+
+        function toggleHide()
+        {
+            // let btn=document.getElementById('btn');
+            // btn.addEventListener('click', function toggleHide(){ });
+            let p1=document.getElementById('para');
+            console.log(p1);
+            if(p1.style.display!='none')
+            {
+                p1.style.display='none';
+            }
+            else
+            {
+                p1.style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>
