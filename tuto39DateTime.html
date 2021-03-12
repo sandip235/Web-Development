@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: Date and time</title>
+</head>
+
+<body>
+    <div class="container">
+        Hello world
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        let now = new Date();
+        console.log(now);
+
+        let a1 = new Date(5000);
+        console.log(a1);
+
+        let a2 = new Date('2029-12-5');
+        console.log(a2);
+
+        let greeting1 = () => console.log('This short way to write function');
+
+        // let NewDate=new Date(year,month, date, hours minutes, seconds, miliseconds);
+        let newDate = new Date(3020, 4, 6, 9, 3, 2);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log(yr);
+
+        let month = newDate.getMonth();
+        console.log(month);
+
+        // same way you can access hours, minutes , seconds and miliseconds
+        newDate.setDate(25);
+        console.log(newDate);
+
+        // we can set the date, time, hours, minutes, seconds
+
+        setInterval(updateTime, 50);
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+
+        let sum2 = (a, b) => a + b;
+        console.log(sum2);
+
+        let sum3 = a => a / 2;
+        console.log(sum3);
+
+        let obj1 = {
+            names: ["harry", "rohan", "skill"],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log("heyyyyy" + student);
+                });
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
